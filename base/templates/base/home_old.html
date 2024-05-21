@@ -1,0 +1,17 @@
+
+<div class="home-container">
+    <div>
+        {% include 'base/topics_components.html' %}
+    </div>
+
+    <div>
+        <h5>{{room_count}} Rooms Available</h5>
+        <a href="{% url 'create-room' %}">Create Room</a>
+        {% include 'base/feed_components.html' %}
+    </div>
+    
+    <div>
+        {% include 'base/activity_components.html' %}
+    </div>
+
+</div>
